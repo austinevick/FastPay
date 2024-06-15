@@ -72,7 +72,7 @@ fun TransactionHistory() {
                                verticalAlignment = Alignment.CenterVertically,
                                horizontalArrangement = Arrangement.SpaceBetween
                            ) {
-                               CircleAvatar(transaction.receiver.substring(0, 1))
+                               CircleAvatar(transaction.sender.substring(0, 1))
                                Column {
                                    Text(text = "${transaction.sender} ",fontSize = 14.sp,
                                        fontWeight = FontWeight.W500,
