@@ -157,7 +157,11 @@ class HomeActivity : Screen {
                     TransactionHistory()
                 }
             }
-            if (showModal.value) ReceiversModalBottomSheet(showModal, selectedSender.value!!)
+            if (showModal.value) selectedSender.value?.let {
+                ReceiversModalBottomSheet(showModal,
+                    it
+                )
+            }
 
         }
     }
